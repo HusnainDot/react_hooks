@@ -7,10 +7,10 @@ const App = () => {
   return (
     <>
       <div className="py-10">
-        <AccordinesContainer/>
-        
+        {/* <AccordinesContainer /> */}
+
         <br />
-        {/* <SliderContainer /> */}
+        <SliderContainer />
         {/* <BirthdaysConatiner /> */}
       </div>
     </>
