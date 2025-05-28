@@ -1,9 +1,9 @@
 import React from "react";
 
-const SliderItme = ({ Username, age, image, text, index }) => {
+const SliderItme = ({ Username, age, image, text, id }) => {
   return (
-    <div className="bg-[#457b9d] rounded-md py-8 flex flex-col items-center gap-2.5 text-[#a8dadc] shadow-2xl shadow-[#1b263b] min-w-[100%]">
-      <p className="text-sm text-gray-300">Index: {index}</p>
+    <div className="bg-[#457b9d] rounded-lg py-8 flex flex-col items-center gap-2.5 text-[#a8dadc] shadow-2xl shadow-[#1b263b] min-w-[100%]">
+      <p className="text-sm text-gray-300">Index: {id}</p>
       <img
         src={image}
         alt=""
