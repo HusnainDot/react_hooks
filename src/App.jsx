@@ -6,15 +6,16 @@ import AccordinesContainer from "./accordines/AccordinesContainer";
 const App = () => {
   return (
     <>
-      <div className="py-10">
-        {/* <AccordinesContainer /> */}
+      <div className="py-10 ">
+        <AccordinesContainer />
 
         <br />
         <SliderContainer />
-        {/* <BirthdaysConatiner /> */}
+        <BirthdaysConatiner />
       </div>
     </>
   );
 };
 
 export default App;
+ 
