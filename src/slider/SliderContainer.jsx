@@ -37,11 +37,11 @@ const SliderContainer = () => {
   };
 
   return (
-    <div className="w-[90%] md:w-[70%] lg:w-[60%] mx-auto mt-[5%] rounded-xl bg-gray-200 p-5 py-10 shadow-2xl shadow-[#415a77] flex items-center gap-2 overflow-hidden">
+    <div className="w-[90%] md:w-[70%] lg:w-[60%] mx-auto mt-[5%] rounded-xl bg-gray-200 p-5 py-10 shadow-2xl shadow-[#415a77] flex items-center gap-2 overflow-hidden relative">
       {/* Left Button */}
       <div
         onClick={prevSlide}
-        className="border-2 rounded-full p-2 flex items-center justify-center active:scale-95 cursor-pointer z-10 bg-white"
+        className="border-2 rounded-full p-2 flex items-center justify-center active:scale-95 cursor-pointer z-10 bg-white absolute left-[0%] translate-1/2"
       >
         <FaAngleLeft size={30} />
       </div>
@@ -65,7 +65,7 @@ const SliderContainer = () => {
       {/* Right Button */}
       <div
         onClick={nextSlide}
-        className="border-2 rounded-full p-2 flex items-center justify-center active:scale-95 cursor-pointer z-10 bg-white"
+        className="border-2 rounded-full p-2 flex items-center justify-center active:scale-95 cursor-pointer z-10 bg-white absolute right-[5%] translate-1/2"
       >
         <FaAngleRight size={30} />
       </div>
