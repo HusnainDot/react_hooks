@@ -3,19 +3,21 @@ import "./globals.css";
 import BirthdaysConatiner from "./birthdays/BirthdaysConatiner";
 import SliderContainer from "./slider/SliderContainer";
 import AccordinesContainer from "./accordines/AccordinesContainer";
+import SimpleSlider from "./simpleSlider/SimpleSlider";
 const App = () => {
   return (
     <>
       <div className="py-10 ">
-        <AccordinesContainer />
-
+        {/* <AccordinesContainer /> */}
         <br />
-        <SliderContainer />
-        <BirthdaysConatiner />
+        {/* <SliderContainer /> */}
+        <br />
+        {/* <BirthdaysConatiner /> */}
+        <br />
+        <SimpleSlider />
       </div>
     </>
   );
 };
 
 export default App;
- 
