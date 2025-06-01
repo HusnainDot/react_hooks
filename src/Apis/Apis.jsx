@@ -1,22 +1,41 @@
 import React, { useEffect, useState } from "react";
 import SingleUser from "./SingleUser";
+import { Grid } from "react-loader-spinner";
 
 const Apis = () => {
   const apis = "https://api.github.com/users/mojombo/subscriptions";
 
   const [userdata, setUserData] = useState([]);
-
+  const [loading, setloading] = useState(true);
   let users = async () => {
+    setloading(true);
     let response = await fetch(apis);
     let data = await response.json();
     setUserData(data);
+    setloading(false);
   };
 
   useEffect(() => {
     users();
   }, []);
 
-  users();
+  if (loading) {
+    return (
+      <div className="h-screen w-full flex items-center justify-center">
+        <Grid
+          visible={true}
+          height="140"
+          width="140"
+          color="#0B5166"
+          ariaLabel="grid-loading"
+          radius="12.5"
+          wrapperStyle={{}}
+          wrapperClass="grid-wrapper"
+        />
+      </div>
+    );
+  }
+
   return (
     <>
       <div className="container bg-gray-300 rounded-2xl shadow-2xl shadow-teal-950 mx-auto  w-[90%]">
@@ -25,7 +44,7 @@ const Apis = () => {
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2  gap-y-10 gap-2.5 lg:grid-cols-4 p-8">
           {userdata?.map((obj, i) => {
-              return <SingleUser key={i} {...obj} />;
+            return <SingleUser key={i} {...obj} />;
           })}
         </div>
       </div>
