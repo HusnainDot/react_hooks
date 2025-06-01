@@ -8,16 +8,12 @@ import Apis from "./Apis/Apis";
 const App = () => {
   return (
     <>
-      <div className="py-10 ">
+      <div className="py-10 flex flex-col gap-y-20 ">
         {/* <AccordinesContainer />
-        <br />
         <SliderContainer />
-        <br />
         <BirthdaysConatiner />
-        <br />
-        <SimpleSlider /> 
-        */}
-        <Apis />
+        <SimpleSlider /> */}
+        <Apis/>
       </div>
     </>
   );
