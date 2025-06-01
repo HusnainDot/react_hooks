@@ -41,7 +41,7 @@ const SliderContainer = () => {
       {/* Left Button */}
       <div
         onClick={prevSlide}
-        className="border-2 rounded-full p-2 flex items-center justify-center active:scale-95 cursor-pointer z-10 bg-white absolute left-[0%] translate-1/2"
+        className="border-2 rounded-full p-2 flex items-center justify-center active:scale-95 cursor-pointer z-10 bg-white absolute left-[-6%] md:left-[-2%] translate-1/2"
       >
         <FaAngleLeft size={30} />
       </div>
@@ -65,7 +65,7 @@ const SliderContainer = () => {
       {/* Right Button */}
       <div
         onClick={nextSlide}
-        className="border-2 rounded-full p-2 flex items-center justify-center active:scale-95 cursor-pointer z-10 bg-white absolute right-[5%] translate-1/2"
+        className="border-2 rounded-full p-2 flex items-center justify-center active:scale-95 cursor-pointer z-10 bg-white absolute right-[8%] md:right-[3%] translate-1/2"
       >
         <FaAngleRight size={30} />
       </div>

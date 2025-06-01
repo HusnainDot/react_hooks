@@ -28,7 +28,7 @@ const SimpleSlider = () => {
         <div className="flex items-center gap-2 overflow-hidden relative">
           <div
             onClick={handelSlide}
-            className="border-2 left rounded-full p-2 flex items-center justify-center active:scale-95 cursor-pointer z-10 bg-white absolute left-[-5%]  translate-1/2"
+            className="border-2 left rounded-full p-2 flex items-center justify-center active:scale-95 cursor-pointer z-10 bg-white absolute left-[-6%] md:left-[0%]  translate-1/2"
           >
             <FaAngleLeft size={30} className="left" />
           </div>
@@ -53,7 +53,7 @@ const SimpleSlider = () => {
           <div
             onClick={handelSlide}
             className="border-2 right rounded-full p-2 flex items-center justify-center active:scale-95 cursor-pointer z-10 bg-white
-            absolute right-[6%] translate-1/2"
+            absolute right-[8%] md:right-[5%] translate-1/2"
           >
             <FaAngleRight size={30} className="right" />
           </div>
