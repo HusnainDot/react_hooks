@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SingleUser from "./SingleUser";
+import { PulseLoader } from "react-spinners";
 
 const Apis = () => {
   const apis = "https://api.github.com/users/mojombo/subscriptions";
@@ -21,14 +22,20 @@ const Apis = () => {
   if (loading) {
     return (
       <div className="h-screen w-full flex items-center justify-center">
-        <h3 className=" text-6xl text-teal-950">Loading...</h3>
+        <PulseLoader
+          color="#005f5f"
+          cssOverride={{}}
+          loading
+          margin={8}
+          size={25}
+          speedMultiplier={1}
+        />
       </div>
     );
   }
 
   return (
     <>
-      
       <div className="container bg-gray-300 rounded-2xl shadow-2xl shadow-teal-950 mx-auto  w-[90%]">
         <h1 className="text-center  text-4xl py-3 text-teal-900">
           Dummy Api's
