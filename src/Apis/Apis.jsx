@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import SingleUser from "./SingleUser";
-import { Grid } from "react-loader-spinner";
 
 const Apis = () => {
   const apis = "https://api.github.com/users/mojombo/subscriptions";
@@ -22,22 +21,14 @@ const Apis = () => {
   if (loading) {
     return (
       <div className="h-screen w-full flex items-center justify-center">
-        <Grid
-          visible={true}
-          height="140"
-          width="140"
-          color="#0B5166"
-          ariaLabel="grid-loading"
-          radius="12.5"
-          wrapperStyle={{}}
-          wrapperClass="grid-wrapper"
-        />
+        <h3 className=" text-6xl text-teal-950">Loading...</h3>
       </div>
     );
   }
 
   return (
     <>
+      
       <div className="container bg-gray-300 rounded-2xl shadow-2xl shadow-teal-950 mx-auto  w-[90%]">
         <h1 className="text-center  text-4xl py-3 text-teal-900">
           Dummy Api's
