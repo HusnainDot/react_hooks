@@ -12,8 +12,10 @@ const App = () => {
         {/* <AccordinesContainer />
         <SliderContainer />
         <BirthdaysConatiner />
-        <SimpleSlider /> */}
-        <Apis/>
+        <SimpleSlider />  
+        
+        */}
+        <Apis />
       </div>
     </>
   );
